@@ -22,7 +22,7 @@ const menuItems = {
   ],
   secondaryMenuItems: [
     {
-      href: 'https://github.com/jacob-ebey/federated-library-boilerplate',
+      href: 'https://github.com/jacob-ebey/federated-libraries',
       children: 'GitHub',
       rel: 'noopener noreferrer',
       target: 'blank',
