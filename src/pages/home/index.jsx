@@ -115,7 +115,13 @@ export default function HomePage() {
             system, by shipping those critical shared pieces as macro or as micro as you would
             like. It does this by pulling them out of the the build pipeline and out of your apps.
           </p>
-          <Button as="a" size="large">
+          <Button
+            as="a"
+            size="large"
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://dev.to/marais/webpack-5-and-module-federation-4j1i"
+          >
             Read More
           </Button>
 
