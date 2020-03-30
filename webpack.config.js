@@ -11,6 +11,27 @@ const routes = require('./src/routes.js').map((route) => route.path);
 
 const mode = process.env.NODE_ENV || 'production';
 
+console.log(`
+
+
+
+
+
+
+
+
+
+NOW_URL: ${process.env.NOW_URL}
+
+
+
+
+
+
+
+
+`);
+
 /**
  * @type {Configuration}
  */
