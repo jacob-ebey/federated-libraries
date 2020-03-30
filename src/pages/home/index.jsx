@@ -58,13 +58,20 @@ export default function HomePage() {
             <Grid.Column floated="right" width={6} textAlign="center">
               <Image size="large" src={federationDiagram} style={{ margin: '0 auto 1rem auto' }} />
               <p>
-                Teams can consume comonents at runtime instead of as part of their build pipeline
+                Teams can consume components at runtime instead of as part of their build pipeline
               </p>
             </Grid.Column>
           </Grid.Row>
           <Grid.Row>
             <Grid.Column textAlign="center">
-              <Button size="huge">Lean More</Button>
+              <Button
+                as="a"
+                size="huge"
+                href="https://indepth.dev/webpack-5-module-federation-a-game-changer-in-javascript-architecture/"
+
+              >
+                Lean More
+              </Button>
             </Grid.Column>
           </Grid.Row>
         </Grid>
@@ -135,12 +142,10 @@ export default function HomePage() {
           </Divider>
 
           <Header as="h3" style={{ fontSize: '2em' }}>
-            Building A Resume With This Websites Modules
+            Building A Blog With This Websites Modules
           </Header>
           <p>
-            Yes I know you probably disregarded the earlier boasts as non-sequitur filler content,
-            but it&apos;s really true. It took years of gene splicing and combinatory DNA research,
-            but our bananas can really dance.
+            Create a blog with the exposed modules from this website.
           </p>
           <Button as="a" size="large">
             Get Started

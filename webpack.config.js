@@ -119,7 +119,7 @@ module.exports = {
         ArticlePage: './src/components/article-page',
         Hero: './src/components/hero',
       },
-      shared: ['react', 'react-dom', 'semantic-ui-react'],
+      shared: ['react', 'react-dom', 'react-router-dom', 'semantic-ui-react'],
     }),
     new ReactRouterHtmlPlugin({
       template: './public/index.html',
