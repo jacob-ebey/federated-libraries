@@ -86,7 +86,7 @@ export default function MobileShell({
           inverted
           vertical
         >
-          <Container>
+          <Container className="no-print">
             <Menu inverted pointing secondary size="large">
               <Menu.Item onClick={handleSidebarToggle}>
                 <Icon name="sidebar" />

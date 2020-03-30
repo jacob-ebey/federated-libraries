@@ -29,7 +29,7 @@ export default function HomePage() {
             <h2>
               start treating your component libraries as independently deployed services
             </h2>
-            <Button as="a" primary size="huge" href="/get-started">
+            <Button as="a" primary size="huge" href="/get-started" className="no-print">
               Get Started
               <Icon name="arrow right" />
             </Button>
@@ -70,6 +70,7 @@ export default function HomePage() {
                 rel="noopener noreferrer"
                 target="_blank"
                 href="https://indepth.dev/webpack-5-module-federation-a-game-changer-in-javascript-architecture/"
+                className="no-print"
               >
                 Lean More
               </Button>
@@ -129,6 +130,7 @@ export default function HomePage() {
             rel="noopener noreferrer"
             target="_blank"
             href="https://dev.to/marais/webpack-5-and-module-federation-4j1i"
+            className="no-print"
           >
             Read More
           </Button>
@@ -155,6 +157,7 @@ export default function HomePage() {
             rel="noopener noreferrer"
             target="_blank"
             href="https://github.com/jacob-ebey/federated-blog"
+            className="no-print"
           >
             Browse Code
           </Button>

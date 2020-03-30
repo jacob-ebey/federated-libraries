@@ -45,6 +45,7 @@ export default function DesktopShell({
             pointing={!menuOpen}
             secondary={!menuOpen}
             size="large"
+            className="no-print"
           >
             <Container>
               {menuItems && menuItems.map(({ href, ...props }, i) => {

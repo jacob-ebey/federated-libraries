@@ -1,3 +1,11 @@
-body, .fb {
+body,
+.fb {
   font-size: 16px;
+}
+
+@media print {
+  .no-print,
+  .no-print * {
+    display: none !important;
+  }
 }

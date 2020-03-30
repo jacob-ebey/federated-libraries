@@ -26,8 +26,13 @@ export default function Footer() {
                 Looking To The Future
               </Header>
               <p>
-                Staying up to date on technology and patterns are important, allowing me to work within
-                your existing stack, or propose one that will scale far into the future.
+                Staying up to date on technology and patterns are important, allowing me to work
+                within your existing stack, or propose one that will scale far into the future.
+              </p>
+              <p>
+                Created with&nbsp;
+                <span role="img" aria-label="love">❤️</span>
+                by: Jacob Ebey
               </p>
             </Grid.Column>
           </Grid.Row>
