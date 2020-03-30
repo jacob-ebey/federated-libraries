@@ -18,7 +18,7 @@ module.exports = {
   entry: './src/index',
 
   output: {
-    publicPath: mode === 'development' ? 'http://localhost:3001/' : process.env.NOW_URL,
+    publicPath: mode === 'development' ? 'http://localhost:3001/' : 'https://federated-libraries.now.sh/',
   },
 
   mode,
