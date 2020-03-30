@@ -18,7 +18,7 @@ module.exports = {
   entry: './src/index',
 
   output: {
-    publicPath: mode === 'development' ? 'http://localhost:3001/' : '/',
+    publicPath: mode === 'development' ? 'http://localhost:3001/' : process.env.NOW_URL,
   },
 
   mode,
@@ -91,6 +91,10 @@ module.exports = {
         use: [
           {
             loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'images/',
+            },
           },
         ],
       },
