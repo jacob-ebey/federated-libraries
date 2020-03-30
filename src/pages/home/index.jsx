@@ -139,7 +139,7 @@ export default function HomePage() {
             horizontal
             style={{ margin: '3em 0em', textTransform: 'uppercase' }}
           >
-            <a href="#lol">Case Studies</a>
+            Case Studies
           </Divider>
 
           <Header as="h3" style={{ fontSize: '2em' }}>
