@@ -16,8 +16,10 @@ const menuItems = {
       children: 'Get Started',
     },
     {
-      href: '/learn-more',
+      href: 'https://indepth.dev/webpack-5-module-federation-a-game-changer-in-javascript-architecture/',
       children: 'Learn More',
+      rel: 'noopener noreferrer',
+      target: 'blank',
     },
   ],
   secondaryMenuItems: [

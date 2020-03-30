@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { NavLink } from 'react-router-dom';
 import {
   Button,
   Container,
@@ -48,17 +49,36 @@ export default function MobileShell({
         vertical
         visible={sidebarOpened}
       >
-        {menuItems && menuItems.map((props, i) => (
-          // @ts-ignore
-          <Menu.Item
-            // eslint-disable-next-line react/no-array-index-key
-            key={i}
-            // eslint-disable-next-line
-            {...props}
-            // eslint-disable-next-line
-            as={props.href ? 'a' : 'button'}
-          />
-        ))}
+        {menuItems && menuItems.map(({ href, ...props }, i) => {
+          if (href && href.includes('://')) {
+            return (
+              <Menu.Item
+                // eslint-disable-next-line react/no-array-index-key
+                key={i}
+                // eslint-disable-next-line
+                {...props}
+                href={href}
+                as="a"
+              />
+            );
+          }
+
+          return (
+            <NavLink
+              component={Menu.Item}
+              exact
+              activeClassName="active"
+              // eslint-disable-next-line react/no-array-index-key
+              key={i}
+              // eslint-disable-next-line
+              {...props}
+              to={href}
+              // @ts-ignore
+              // eslint-disable-next-line
+              as={href ? 'a' : 'button'}
+            />
+          );
+        })}
       </Sidebar>
 
       <Sidebar.Pusher dimmed={sidebarOpened}>

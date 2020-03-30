@@ -116,6 +116,7 @@ module.exports = {
       filename: 'remoteEntry.js',
       exposes: {
         AppShell: './src/components/app-shell',
+        ArticlePage: './src/components/article-page',
         Hero: './src/components/hero',
       },
       shared: ['react', 'react-dom', 'semantic-ui-react'],

@@ -47,21 +47,36 @@ export default function DesktopShell({
             size="large"
           >
             <Container>
-              {menuItems && menuItems.map(({ href, ...props }, i) => (
-                <NavLink
-                  component={Menu.Item}
-                  exact
-                  activeClassName="active"
-                  // eslint-disable-next-line react/no-array-index-key
-                  key={i}
-                  // eslint-disable-next-line
-                  {...props}
-                  to={href}
-                  // @ts-ignore
-                  // eslint-disable-next-line
-                  as={href ? 'a' : 'button'}
-                />
-              ))}
+              {menuItems && menuItems.map(({ href, ...props }, i) => {
+                if (href && href.includes('://')) {
+                  return (
+                    <Menu.Item
+                      // eslint-disable-next-line react/no-array-index-key
+                      key={i}
+                      // eslint-disable-next-line
+                      {...props}
+                      href={href}
+                      as="a"
+                    />
+                  );
+                }
+
+                return (
+                  <NavLink
+                    component={Menu.Item}
+                    exact
+                    activeClassName="active"
+                    // eslint-disable-next-line react/no-array-index-key
+                    key={i}
+                    // eslint-disable-next-line
+                    {...props}
+                    to={href}
+                    // @ts-ignore
+                    // eslint-disable-next-line
+                    as={href ? 'a' : 'button'}
+                  />
+                );
+              })}
 
               <Menu.Item position="right">
                 {secondaryMenuItems && secondaryMenuItems.map((props, i) => (
