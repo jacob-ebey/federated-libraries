@@ -13,31 +13,21 @@ export default function Footer() {
       <Container>
         <Grid divided inverted stackable>
           <Grid.Row>
-            <Grid.Column width={3}>
-              <Header inverted as="h4" content="About" />
+            <Grid.Column width={6}>
+              <Header inverted as="h4" content="More Awesomeness" />
               <List link inverted>
-                <List.Item as="a">Sitemap</List.Item>
-                <List.Item as="a">Contact Us</List.Item>
-                <List.Item as="a">Religious Ceremonies</List.Item>
-                <List.Item as="a">Gazebo Plans</List.Item>
-              </List>
-            </Grid.Column>
-            <Grid.Column width={3}>
-              <Header inverted as="h4" content="Services" />
-              <List link inverted>
-                <List.Item as="a">Banana Pre-Order</List.Item>
-                <List.Item as="a">DNA FAQ</List.Item>
-                <List.Item as="a">How To Access</List.Item>
-                <List.Item as="a">Favorite X-Men</List.Item>
+                <List.Item as="a" href="https://github.com/jacob-ebey">Peek My Github</List.Item>
+                <List.Item as="a" href="https://jacob-ebey.js.org/resume">Check My Resume</List.Item>
+                <List.Item as="a" href="https://jacob-ebey.js.org/about">Learn More About Me</List.Item>
               </List>
             </Grid.Column>
             <Grid.Column width={7}>
               <Header as="h4" inverted>
-                Footer Header
+                Looking To The Future
               </Header>
               <p>
-                Extra space for a call to action inside the footer that could help re-engage
-                users.
+                Staying up to date on technology and patterns are important, allowing me to work within
+                your existing stack, or propose one that will scale far into the future.
               </p>
             </Grid.Column>
           </Grid.Row>

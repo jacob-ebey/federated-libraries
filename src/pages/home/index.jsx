@@ -67,8 +67,9 @@ export default function HomePage() {
               <Button
                 as="a"
                 size="huge"
+                rel="noopener noreferrer"
+                target="_blank"
                 href="https://indepth.dev/webpack-5-module-federation-a-game-changer-in-javascript-architecture/"
-
               >
                 Lean More
               </Button>
@@ -142,13 +143,20 @@ export default function HomePage() {
           </Divider>
 
           <Header as="h3" style={{ fontSize: '2em' }}>
-            Building A Blog With This Websites Modules
+            A Blog Utilizing This Websites Modules
           </Header>
           <p>
-            Create a blog with the exposed modules from this website.
+            Explore the source of a simple blog that utilizes the ContainerReferencePlugin to
+            reference federated components from this website.
           </p>
-          <Button as="a" size="large">
-            Get Started
+          <Button
+            as="a"
+            size="large"
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://github.com/jacob-ebey/federated-blog"
+          >
+            Browse Code
           </Button>
         </Container>
       </Segment>
