@@ -1,6 +1,5 @@
 /* eslint-disable import/no-unresolved */
 const { DefinePlugin } = require('webpack');
-// const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPlugin');
 
 const ReactRouterHtmlPlugin = require('./webpack/ReactRouterHtmlPlugin');
