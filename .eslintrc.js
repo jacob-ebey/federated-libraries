@@ -1,7 +1,7 @@
 module.exports = {
-    "extends": [
-        "airbnb",
-        "airbnb/hooks"
-    ],
-    "parser": "babel-eslint"
+  "extends": [
+    "airbnb",
+    "airbnb/hooks"
+  ],
+  "parser": "babel-eslint"
 };
